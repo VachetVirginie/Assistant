@@ -275,6 +275,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 openLinkInNewWindow('https://www.youtube.com/watch?v=7OfMZyPeTZA');
                 break;
 
+            case "concert":
+                clearInput();
+                addTextToResults('🤘 Envoie du son !!!');
+                openLinkInNewWindow('http://www.transbordeur.fr/accueil/');
+                break;
+
             case "cinema":
                 clearInput();
                 addTextToResults('🎥On va voir quoi ma gueule?');
