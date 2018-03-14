@@ -275,6 +275,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 openLinkInNewWindow('https://www.youtube.com/watch?v=7OfMZyPeTZA');
                 break;
 
+            case "cinema":
+                clearInput();
+                addTextToResults('🎥On va voir quoi ma gueule?');
+                openLinkInNewWindow('http://www.cinemas-lumiere.com/le-reseau/lumiere-terreaux/');
+                openLinkInNewWindow('https://www.cinemasgaumontpathe.com/cinemas/cinema-lyon-pathe-bellecour/');
+                break;
+
             case "travail":
                 clearInput();
                 addTextToResults('💰money money money !!!💰');
