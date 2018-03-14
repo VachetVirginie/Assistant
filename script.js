@@ -281,6 +281,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 openLinkInNewWindow('http://www.transbordeur.fr/accueil/');
                 break;
 
+            case "sortie":
+                clearInput();
+                addTextToResults('👟 On va où on fait quoi ?');
+                openLinkInNewWindow('https://lyon.citycrunch.fr/');
+                break;
+
             case "cinema":
                 clearInput();
                 addTextToResults('🎥On va voir quoi ma gueule?');
