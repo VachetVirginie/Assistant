@@ -48,6 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
       "- 'Date' pour connaitre la date.",
       "- 'foot' pour toutes les infos sur la ligue 1",
       "- 'horoscope' pour savoir ce qui va t'arriver aujourd'hui",
+      "- 'meteo lyon'pour connaitre les previsions de la semaine",
       "* Il y a plein de mots cachés à toi de les découvrir."
     ].join('<br>');
     addTextToResults(helpKeyWords);
@@ -92,9 +93,11 @@ document.addEventListener('DOMContentLoaded', function() {
   var textReplies = function() {
     switch(textInputValueLowerCase){
       // funny replies [START]
-      case "mahdi":
+      case "vivi":
+      case "virgie":
+      case "virge":
         clearInput();
-        addTextToResults("He's my maker <a target='_blank' href='https://twitter.com/mahdif'>@mahdif</a>");
+        addTextToResults("c'est ma creatrice</a>");
         break;
 
       case "solene":
@@ -118,7 +121,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
       case "axel":
         clearInput();
-        addTextToResults("🍌 + <a target='_blank' href='https://twitter.com/Dr_Gustavo'>@Dr_Gustavo</a>");
+        addTextToResults("❤ le sang !</a>");
+        openLinkInNewWindow('https://www.youtube.com/watch?v=_AKNGgSmhoY');
         break;
 
       case "i love you":
@@ -128,13 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
         addTextToResults("Ohhhh c'est trop mignon !!! 😍. Je t'envoie de l'amour aussi ... ❤ ❤ ❤ !");
         break;
 
-      case "ironman":
-      case "iron man":
-      case "shoot to thrill":
-        clearInput();
-        addTextToResults('Shoot to Thrill!');
-        openLinkInNewWindow('https://www.youtube.com/watch?v=xRQnJyP77tY');
-        break;
+     
 
         case "ligue1":
         case "foot":
@@ -171,8 +169,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
       case "cat":
       case "chat":
+      case "hijo":
         clearInput();
-        addTextToResults("Meow!! 🐱<br> psst: try typing (cat videos)");
+        addTextToResults("Meow!! 🐱<br> psst: essaies cat videos");
         break;
 
      case "test":
@@ -208,7 +207,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       case "cat videos":
       case "cat v":
-        addTextToResults("Okay I'll show you some in YouTube.");
+        addTextToResults("Okay allons voir des chatons mignons.");
         openLinkInNewWindow('https://www.youtube.com/results?search_query=cat videos');
         break;
 
@@ -217,7 +216,7 @@ document.addEventListener('DOMContentLoaded', function() {
         addTextToResults("Mr. Trololo!");
         openLinkInNewWindow('https://www.youtube.com/watch?v=1uTAJG3Khes');
         break;
-      // funny replies [END]
+     
 
       case "youtube":
         clearInput();
@@ -256,6 +255,12 @@ document.addEventListener('DOMContentLoaded', function() {
       clearInput();
       addTextToResults('Quoi de neuf sur se loger ?');
       openLinkInNewWindow('http://www.seloger.com/list.htm?idtt=2&naturebien=1,2,4&idtypebien=2&ci=690123&tri=a_px&nb_pieces=3&pxmax=385000&surfacemin=70');
+      break;
+
+      case "marseille":
+      clearInput();
+      addTextToResults('Ecaaaaaaaaaaaartes toi !!!');
+      openLinkInNewWindow('https://www.youtube.com/watch?v=7OfMZyPeTZA');
       break;
 
       default:
