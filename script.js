@@ -281,6 +281,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 openLinkInNewWindow('http://www.transbordeur.fr/accueil/');
                 break;
 
+            case "recette":
+                clearInput();
+                addTextToResults('👻 Mangeeeerrrrrr !!!');
+                openLinkInNewWindow('www.marmiton.org');
+                break;
+
             case "sortie":
                 clearInput();
                 addTextToResults('👟 On va où on fait quoi ?');
