@@ -284,7 +284,7 @@ document.addEventListener('DOMContentLoaded', function() {
             case "recette":
                 clearInput();
                 addTextToResults('👻 Mangeeeerrrrrr !!!');
-                openLinkInNewWindow('www.marmiton.org');
+                openLinkInNewWindow('http://www.marmiton.org');
                 break;
 
             case "sortie":
