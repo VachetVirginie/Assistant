@@ -295,12 +295,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 addTextToResults('👟 On va où on fait quoi ?');
                 openLinkInNewWindow('https://lyon.citycrunch.fr/');
                 break;
-
-            case "So":
+           
+            case "vol":
                 clearInput();
-                addTextToResults('<a href="sms:+33698266405">Phone only</a>');
-                openLinkInNewWindow('https://lyon.citycrunch.fr/');
+                addTextToResults('Je te vois');
+                openLinkInNewWindow('https://fr.flightaware.com/');
                 break;
+
+
 
             case "cinema":
                 clearInput();
