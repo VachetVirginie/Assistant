@@ -51,8 +51,9 @@ document.addEventListener('DOMContentLoaded', function() {
             "- 'foot' pour toutes les infos sur la ligue 1",
             "- 'horoscope' pour savoir ce qui va t'arriver aujourd'hui",
             "- 'meteo lyon'pour connaitre les previsions de la semaine",
+            "- 'meteo lunel'pour connaitre les previsions de la semaine",
             "- 'Poker' et hop c'est parti pour Winamax",
-            "- 'Macron' me chauffe pas je te chante une chanson !!",
+            "- 'Macron' me chauffe pas ou je te chante une chanson !!",
             "* Il y a plein de mots cachés à toi de les découvrir."
         ].join('<br>');
         addTextToResults(helpKeyWords);
@@ -170,6 +171,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 openLinkInNewWindow('http://www.meteofrance.com/previsions-meteo-france/lyon/69000')
                 break;
 
+            case "meteo lunel":
+                clearInput();
+                addTextToResults("On fais péter le t shirt ?");
+                openLinkInNewWindow('http://www.meteofrance.com/previsions-meteo-france/lunel/34400')
+                break;
+
             case "non":
                 clearInput();
                 addTextToResults("Suis déçuuuuuuue!😭");
@@ -245,6 +252,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 addTextToResults("Type google + something to search for.");
                 break;
 
+            case "somess":
+                clearInput();
+                addTextToResults('<a href="sms:5552345678">Phone only</a>');
+                break;
+
             case "time":
             case "heure":
                 clearInput();
@@ -298,10 +310,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 openLinkInNewWindow('https://lyon.citycrunch.fr/');
                 break;
 
-            case "Macron":
+            case "macron":
                 clearInput();
                 addTextToResults('Macron démission');
-                openLinkInNewWindow('https://www.youtube.com/watch?v=9i3alzuVFXo');
+                openLinkInNewWindow('https://youtu.be/9i3alzuVFXo');
                 break;
 
             case "cinema":
@@ -311,15 +323,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 openLinkInNewWindow('https://www.cinemasgaumontpathe.com/cinemas/cinema-lyon-pathe-bellecour/');
                 break;
 
-            case "travail":
+            case "travai":
                 clearInput();
                 addTextToResults('💰money money money !!!💰');
                 openLinkInNewWindow('https://www.rhonealpesjob.com/emplois/recherche.html?l=Lyon+69000&l_autocomplete=http%3A%2F%2Fwww.rj.com%2Fcommun%2Flocalite%2Fcommune%2F69123&f=Marketing_com_graphisme&c=CDI');
                 openLinkInNewWindow('https://emploi.alsacreations.com/?action=q&g_type=offres&typecontratcdi=1&q=webdesigner&region=22');
                 openLinkInNewWindow('https://www.indeed.fr/jobs?q=webdesigner&l=Lyon+%2869%29');
                 break;
-
-            default:
+            
+            
+            
+                default:
                 clearInput();
                 addTextToResults("<p><i>The command " + "<b>" + textInputValue + "</b>" + " was not found. Type <b>Help</b> to see all commands.</i></p>");
                 break;
