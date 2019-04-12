@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var postHelpList = function() {
         // Array of all the help keywords
         var helpKeyWords = [
-            
+            "- 'Perdu' T'inquiéte mon poto va t'aider",
             "- 'Cinema' pour voir les films et horaires",
             "- 'Manger' et il n'y a plus qu'à commander",
             "- Google + ce que tu cherches",
@@ -52,6 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "- 'horoscope' pour savoir ce qui va t'arriver aujourd'hui",
             "- 'meteo lyon'pour connaitre les previsions de la semaine",
             "- 'Poker' et hop c'est parti pour Winamax",
+            "- 'Macron' me chauffe pas je te chante une chanson !!",
             "* Il y a plein de mots cachés à toi de les découvrir."
         ].join('<br>');
         addTextToResults(helpKeyWords);
@@ -216,6 +217,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             case "ca va ":
             case "oui":
+            case "yes":
                 clearInput();
                 addTextToResults("ca fait plaisir ! 😃 ");
                 break;
@@ -266,10 +268,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 openLinkInNewWindow('http://www.sympatico.ca/horoscope/traditionnel');
                 break;
 
-            case "maison":
+            case "perdu":
                 clearInput();
-                addTextToResults('Quoi de neuf sur se loger ?');
-                openLinkInNewWindow('http://www.seloger.com/list.htm?idtt=2&naturebien=1,2,4&idtypebien=2&ci=690123&tri=a_px&nb_pieces=3&pxmax=385000&surfacemin=70');
+                addTextToResults('C est bon t as retrouvé ton chemin?');
+                openLinkInNewWindow('http://maps.google.com/');
                 break;
 
             case "marseille":
@@ -295,14 +297,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 addTextToResults('👟 On va où on fait quoi ?');
                 openLinkInNewWindow('https://lyon.citycrunch.fr/');
                 break;
-           
-            case "vol":
+
+            case "Macron":
                 clearInput();
-                addTextToResults('Je te vois');
-                openLinkInNewWindow('https://fr.flightaware.com/');
+                addTextToResults('Macron démission');
+                openLinkInNewWindow('https://www.youtube.com/watch?v=9i3alzuVFXo');
                 break;
-
-
 
             case "cinema":
                 clearInput();
