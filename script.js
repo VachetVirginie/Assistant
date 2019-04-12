@@ -298,13 +298,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
             case "So mess":
                 clearInput();
-                addTextToResults('👟 On va où on fait quoi ?');
+                addTextToResults('<a href="sms:+33698266405">Phone only</a>');
                 openLinkInNewWindow('https://lyon.citycrunch.fr/');
                 break;
 
             case "cinema":
                 clearInput();
-                addTextToResults('<a href="sms:+33698266405">Phone only</a>');
+                addTextToResults('🎥On va voir quoi ma gueule?');
+                openLinkInNewWindow('http://www.cinemas-lumiere.com/le-reseau/lumiere-terreaux/');
+                openLinkInNewWindow('https://www.cinemasgaumontpathe.com/cinemas/cinema-lyon-pathe-bellecour/');
                 break;
 
             case "travail":
