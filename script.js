@@ -296,7 +296,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 openLinkInNewWindow('https://lyon.citycrunch.fr/');
                 break;
 
-            case "So mess":
+            case "So":
                 clearInput();
                 addTextToResults('<a href="sms:+33698266405">Phone only</a>');
                 openLinkInNewWindow('https://lyon.citycrunch.fr/');
