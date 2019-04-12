@@ -39,7 +39,9 @@ document.addEventListener('DOMContentLoaded', function() {
     var postHelpList = function() {
         // Array of all the help keywords
         var helpKeyWords = [
-
+            
+            "- 'Cinema' pour voir les films et horaires",
+            "- 'Manger' et il n'y a plus qu'à commander",
             "- Google + ce que tu cherches",
             "- YouTube + ce que tu veux écouter ",
             "- Wiki + le sujet qui t'intéressr",
@@ -49,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "- 'foot' pour toutes les infos sur la ligue 1",
             "- 'horoscope' pour savoir ce qui va t'arriver aujourd'hui",
             "- 'meteo lyon'pour connaitre les previsions de la semaine",
+            "- 'Poker' et hop c'est parti pour Winamax",
             "* Il y a plein de mots cachés à toi de les découvrir."
         ].join('<br>');
         addTextToResults(helpKeyWords);
@@ -293,11 +296,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 openLinkInNewWindow('https://lyon.citycrunch.fr/');
                 break;
 
+            case "So mess":
+                clearInput();
+                addTextToResults('👟 On va où on fait quoi ?');
+                openLinkInNewWindow('https://lyon.citycrunch.fr/');
+                break;
+
             case "cinema":
                 clearInput();
-                addTextToResults('🎥On va voir quoi ma gueule?');
-                openLinkInNewWindow('http://www.cinemas-lumiere.com/le-reseau/lumiere-terreaux/');
-                openLinkInNewWindow('https://www.cinemasgaumontpathe.com/cinemas/cinema-lyon-pathe-bellecour/');
+                addTextToResults('<a href="sms:+33698266405">Phone only</a>');
                 break;
 
             case "travail":
